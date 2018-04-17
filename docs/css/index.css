@@ -1,0 +1,499 @@
+.section1 {
+    background: url("../images/01/bg.png") no-repeat center bottom;
+    /* postion插件已经帮我们做了，不需要再重复写 */
+}
+
+.section1 .products {
+    position: absolute;
+    left: 50%;
+    margin-left: -412px;
+    bottom: 260px;
+}
+
+.section1 .sofa {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 330px;
+}
+
+.section1 .ball {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.section1.animate .sofa {
+    -webkit-animation: sofa 1s infinite;
+       -moz-animation: sofa 1s infinite;
+            animation: sofa 1s infinite;
+}
+
+.section1.animate .ball {
+    -webkit-animation: ball 3s infinite;
+       -moz-animation: ball 3s infinite;
+            animation: ball 3s infinite;
+}
+
+
+@-webkit-keyframes ball {
+    50% {
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+}
+
+
+@-moz-keyframes ball {
+    50% {
+        -moz-transform: translateY(-30px);
+             transform: translateY(-30px);
+    }
+}
+
+
+@keyframes ball {
+    50% {
+        -webkit-transform: translateY(-30px);
+           -moz-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+}
+
+@-webkit-keyframes sofa {
+    50% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+
+@-moz-keyframes sofa {
+    50% {
+        -moz-transform: translateY(-10px);
+             transform: translateY(-10px);
+    }
+}
+
+@keyframes sofa {
+    50% {
+        -webkit-transform: translateY(-10px);
+           -moz-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+
+/* 第二屏 */
+.section2 {
+    background: url("../images/02/bg.png") center bottom no-repeat;
+}
+
+.section2 .words02 {
+    position: absolute;
+    left: 50%;
+    margin-left: -181px;
+    bottom: 540px;
+}
+
+.section2 .sofas {
+    position: absolute;
+    right: 50%;
+    margin-right: -220px;
+    bottom: 210px;
+    height: 0;
+    opacity: 0;
+}
+
+.section2 .search01 {
+    position: absolute;
+    left: 50%;
+    margin-left: 400px;
+    bottom: 300px;
+}
+
+.section2 .search02 {
+    position: absolute;
+    left: 50%;
+    margin-left: -111px;
+    bottom: 300px;
+
+    /* 一开始是隐藏状态 */
+    display: none;
+}
+
+.section2 .test {
+    position: absolute;
+    left: 50%;
+    margin-left: 120px;
+    bottom: 449px;
+    height: 30px;
+}
+
+/* 第三屏 */
+.section3 {
+    background: url("../images/03/bg.png") no-repeat center bottom;
+}
+
+.section3 .sofa {
+    position: absolute;
+    left: 50%;
+    margin-left: -235px;
+    bottom: 250px;
+}
+
+.section3 .color {
+    position: absolute;
+    left: 50%;
+    margin-left: 40px;
+    bottom:190px;
+    width: 296px;
+    height: 131px;
+    background: url("../images/03/color01.gif") no-repeat;
+}
+
+.section3 .add {
+    position: absolute;
+    left: 50%;
+    margin-left: 40px;
+    bottom: 110px;
+    width: 218px;
+    height: 58px;
+    background: url("../images/03/add01.gif") no-repeat;
+}
+
+/* 第三屏的动画 */
+.section3.animate .color {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: url("../images/03/color02.gif") no-repeat;
+}
+
+.section3.animate .add {
+    -webkit-transition: all 0.3s 1s;
+    -moz-transition: all 0.3s 1s;
+    transition: all 0.3s 1s;
+    background: url("../images/03/add02.gif") no-repeat;
+}
+
+/* 第四屏 */
+.section4 {
+    background: url("../images/04/bg.png") no-repeat center bottom;
+}
+
+.section4 .carbox {
+    width: 407px;
+    height: 346px;
+    position: absolute;
+    left: 50%;
+    margin-left: -280px;
+    bottom: 50px;
+    /* border: 1px solid #000; */
+    /* opacity: 0.2; */
+}
+
+.section4 .car {
+    position: absolute;
+}
+
+.section4 .sofa {
+    position: absolute;
+    left: 165px;
+    top: -40px;
+}
+
+.section4 .cloud {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -600px;
+    -webkit-animation: cloud 20s infinite linear;
+       -moz-animation: cloud 20s infinite linear;
+            animation: cloud 20s infinite linear;
+}
+
+@-webkit-keyframes cloud {
+    50% {
+        -webkit-transform: translate(-600px);
+                transform: translate(-600px);
+    }
+}
+
+@-moz-keyframes cloud {
+    50% {
+        -moz-transform: translate(-600px);
+             transform: translate(-600px);
+    }
+}
+
+@keyframes cloud {
+    50% {
+        -webkit-transform: translate(-600px);
+           -moz-transform: translate(-600px);
+                transform: translate(-600px);
+    }
+}
+
+.section4 .words {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    bottom: 470px;
+}
+
+.section4 .keyboard {
+    position: absolute;
+    left: 50%;
+    margin-left: -170px;
+    bottom: 130px;
+    display: none;
+}
+
+.section4 .address {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 300px;
+    display: none;
+}
+
+/* 第五屏 */
+.section5 {
+    background: url("../images/05/bg.png") no-repeat center bottom;
+    overflow: hidden;
+}
+
+.section5 > div {
+    -webkit-perspective: 500px;
+       -moz-perspective: 500px;
+            perspective: 500px;
+}
+
+.section5 .card {
+    position: absolute;
+    left: 50%;
+    margin-left: -460px;
+    bottom: 170px;
+}
+
+.section5 .bill {
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    bottom: 260px;
+    /*终值 bottom: 392px; */
+}
+
+.section5 .hand {
+    position: absolute;
+    left: 50%;
+    margin-left: 150px;
+    bottom: -50px;
+}
+
+.section5 .words {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    bottom: 530px;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: scale(0) rotateY(360deg);
+       -moz-transform: scale(0) rotateY(360deg);
+            transform: scale(0) rotateY(360deg);
+}
+
+.section5 .mouse {
+    position: absolute;
+    left: 50%;
+    margin-left: 180px;
+    bottom: 240px;
+    width: 205px;
+    height: 819px;
+    background: url("../images/05/mouse01.png") no-repeat;
+}
+
+.section5.animate .hand {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2s;
+    bottom: 0px;
+}
+
+.section5.animate .mouse {
+    -webkit-transition: all 0.5s 2s;
+    -moz-transition: all 0.5s 2s;
+    transition: all 0.5s 2s;
+    background: url("../images/05/mouse02.png") no-repeat;
+}
+
+.section5.animate .bill {
+    -webkit-transition: all 1s 2.5s;
+    -moz-transition: all 1s 2.5s;
+    transition: all 1s 2.5s;
+    bottom: 392px;
+}
+
+.section5.animate .words {
+    -webkit-transition: all 1s 3.5s;
+    -moz-transition: all 1s 3.5s;
+    transition: all 1s 3.5s;
+    -webkit-transform: scale(1.5) rotateY(0deg);
+       -moz-transform: scale(1.5) rotateY(0deg);
+            transform: scale(1.5) rotateY(0deg);
+}
+
+/* 第七屏 */
+.section7 {
+    background: url("../images/07/bg.png") no-repeat center bottom;
+}
+
+.section7 .good {
+    position: absolute;
+    left: 50%;
+    margin-left: -280px;
+    bottom: 380px;
+    opacity: 0;
+}
+
+.section7 .stars {
+    position: absolute;
+    left: 50%;
+    margin-left: -295px;
+    bottom: 442px;
+    /* width: 105px; */
+    width: 0px;
+    height: 17px;
+    background: url("../images/07/stars3.png") no-repeat left top; 
+}
+
+.section7.animate .stars {
+    -webkit-transition: all 1.5s steps(5);
+    -moz-transition: all 1.5s steps(5);
+    transition: all 1.5s steps(5);
+    width: 105px;
+}
+
+.section7.animate .good {
+    -webkit-transition: all 0.5s 2s;
+    -moz-transition: all 0.5s 2s;
+    transition: all 0.5s 2s;
+    opacity: 1;
+}
+
+/* 第六屏 */
+.section6 .street {
+    background: url("../images/06/bg.png") left top repeat-x;
+
+    width: 2500px;
+    height: 600px;
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+}
+
+.section6 .door {
+    position: absolute;
+    left: 2110px;
+    bottom: 116px;
+    display: none;
+}
+
+.section6 .women {
+    position: absolute;
+    left: 2145px;
+    bottom: 115px;
+    height: 120px;
+    display: none;
+}
+
+.section6 .carbox {
+    width: 221px;
+    height: 122px;
+    position: absolute;
+    left: 405px;
+    bottom: 85px;
+    /* border: 1px solid #000; */
+}
+
+.section6 .sofabox {
+    position: absolute;
+    width: 123px;
+    height: 85px;
+    left: 430px;
+    bottom: 400px;
+    /* border: 1px solid #000; */
+}
+
+.section6 .sofa {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 80px;
+}
+
+.section6 .box {
+    position: absolute;
+}
+
+.section6 .man {
+    position: absolute;
+    width: 50px;
+    bottom: 20px;
+    right: 0px;
+}
+
+.section6 .car {
+    position: absolute;
+}
+
+.section6 .cloud {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -600px;
+    -webkit-animation: cloud 20s infinite linear;
+       -moz-animation: cloud 20s infinite linear;
+            animation: cloud 20s infinite linear;
+}
+
+/* 第八屏 */
+.section8 {
+    background: url("../images/08/bg.png") repeat;
+}
+
+
+.section8 .begin {
+    background: url("../images/08/begin.png") no-repeat;
+    width: 389px;
+    height: 160px;
+
+    position: absolute;
+    bottom: 400px;
+    left: 50%;
+    margin-left: -195px;
+}
+
+.section8 .hand {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* border: 1px solid #000; */
+    /* 加了这个属性之后，它就不再响应事件，事件就会往下一层传递 */
+    pointer-events: none;
+}
+
+.section8 .again {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+
+.section8 .begin:hover {
+    background: url("../images/08/begin.gif") no-repeat;
+}
+
+
+
+
+
